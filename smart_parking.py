@@ -12,8 +12,8 @@ from datetime import datetime, date
 
 DB_NAME = "parking_system.db"
 
-ADMIN_USERNAME = "admin"
-ADMIN_PASSWORD = "Osamah2002"
+ADMIN_USERNAME = st.secrets.get("ADMIN_USERNAME", "admin")
+ADMIN_PASSWORD = st.secrets.get("ADMIN_PASSWORD", "change_me")
 
 LEFT_CAR_IMAGE = "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=900&q=80"
 RIGHT_CAR_IMAGE = "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
